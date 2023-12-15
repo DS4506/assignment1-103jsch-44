@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Netflix Home Page</title>
+</head>
+<body>
+
+  <script>
+    // My NETFLIX HOME PAGE
+    const userProfileName = "David";
+    const recommendedForYou = ["HEADLINERS ONLY"];
+    const continueWatching = ["Family Business", "LEO"];
+    const trendingNow = ["SQUID GAME", "College Hill"];
+    const newReleases = ["Love and Monsters", "1670"];
+
+    // Display genres
+    const genres = {
+      action: ["Colombiana"],
+      comedy: ["Identity Thief"],
+      drama: ["Lost Girls"]
+    };
+    const realStories = ["Collin in Black and white", "Queen Cleopatra"];
+    const bingeWorthyTvShows = ["The Surrogacy", "Top Boy"];
+    const raunchyComedyMovies = ["Sextuplets", "Sausage Party"];
+    const christmasMovies = ["Jingle Jangle", "Just Another Christmas"];
+    const originals = ["Family Switch", "BEEF"];
+    const upcomingReleases = ["Rebel Moon"];
+    const languagePreferences = ["English"];
+    const videoQualitySettings = ["HD", "4K", "Standard"];
+    const playbackControls = ["Play", "Pause", "Volume"];
+
+    //Display account settings
+    const accountSettings = {
+      name: "David smith",
+      email: "Topgun8727@gmail.com",
+      plan: "Premium"
+    };
+    const notificationCenter = ["New episodes available", "Recommended for you"];
+
+    //Display footer links
+    const footerLinks = ["Help", "Terms of Service", "Privacy Policy"];
+
+    // Display variables on the HTML page
+    document.write("<h1>Welcome to My Netflix Home Page</h1>");
+
+    document.write(`<p>User Profile Name: ${userProfileName}</p>`);
+    document.write(`<p>Recommended For You: ${recommendedForYou.join(', ')}</p>`);
+    document.write(`<p>Continue Watching: ${continueWatching.join(', ')}</p>`);
+    document.write(`<p>Trending Now: ${trendingNow.join(', ')}</p>`);
+    document.write(`<p>New Releases: ${newReleases.join(', ')}</p>`);
+
+    // Display genres
+    document.write("<h2>Genres</h2>");
+    document.write("<ul>");
+    for (const genre in genres) {
+      document.write(`<li>${genre}: ${genres[genre].join(', ')}</li>`);
+    }
+    document.write("</ul>");
+
+    document.write(`<p>Real Stories: ${realStories.join(', ')}</p>`);
+    document.write(`<p>Binge-Worthy TV Shows: ${bingeWorthyTvShows.join(', ')}</p>`);
+    document.write(`<p>Raunchy Comedy Movies: ${raunchyComedyMovies.join(', ')}</p>`);
+    document.write(`<p>Christmas Movies: ${christmasMovies.join(', ')}</p>`);
+    document.write(`<p>Originals: ${originals.join(', ')}</p>`);
+    document.write(`<p>Upcoming Releases: ${upcomingReleases.join(', ')}</p>`);
+    document.write(`<p>Language Preferences: ${languagePreferences.join(', ')}</p>`);
+    document.write(`<p>Video Quality Settings: ${videoQualitySettings.join(', ')}</p>`);
+    document.write(`<p>Playback Controls: ${playbackControls.join(', ')}</p>`);
+
+    // Display account settings
+    document.write("<h2>Account Settings</h2>");
+    document.write(`<p>Name: ${accountSettings.name}</p>`);
+    document.write(`<p>Email: ${accountSettings.email}</p>`);
+    document.write(`<p>Plan: ${accountSettings.plan}</p>`);
+
+    document.write("<h2>Notification Center</h2>");
+    document.write(`<p>${notificationCenter.join(', ')}</p>`);
+
+    // Display footer links
+    document.write("<h2>Footer Links</h2>");
+    document.write("<ul>");
+    for (const link of footerLinks) {
+      document.write(`<li>${link}</li>`);
+    }
+    document.write("</ul>");
+  </script>
+
+</body>
+</html>
